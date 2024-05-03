@@ -1,5 +1,5 @@
 import '../stylos/Header.css'
-import { HeaderBtn } from '../componentes/HeaderBtn.jsx'
+import { HeaderBtn } from './HeaderBtn.jsx'
 import logo from '../img/logo.png'
 import iconInstagram from '../img/icon-instagram.png'
 import iconWapsap from '../img/icon-wapsap.png'
