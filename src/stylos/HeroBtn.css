@@ -1,0 +1,15 @@
+
+.hero a:nth-child(1),
+.hero a:nth-child(2),
+.hero a:nth-child(3),
+.slider a:nth-child(1),
+.slider a:nth-child(2){
+    padding: 10px 25px;
+    color: var(--yellow) !important;
+}
+
+.hero a:nth-child(1),
+.slider a:nth-child(1){
+    background-color: rgba(137, 137, 255, 0.116);
+
+}

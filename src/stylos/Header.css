@@ -1,0 +1,113 @@
+
+
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: var(--black);
+    margin-bottom: 120px;
+    z-index: 10;
+}
+
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+}
+
+header nav ul:nth-child(1) li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    font-size: 25px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+header nav ul:nth-child(1) li a img{
+    transform: translateY(-4px);
+}
+
+header nav ul:nth-child(2) li a{
+    text-transform: uppercase;
+    padding: 0px 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header nav ul:nth-child(2) li:nth-child(4) a::after{
+  
+    content: "";
+    width: 23px;
+    height: 23px;
+    display: block;
+    background-image: url(../img/hero-icon-arrow.png);
+    background-position: center;
+}
+
+header nav ul:nth-child(3){
+    gap: 20px;
+}
+
+header nav ul:nth-child(3) li:nth-child(1) a img,
+header nav ul:nth-child(3) li:nth-child(2) a img{
+    width: 27px;
+}
+
+header nav ul:nth-child(3) li:nth-child(3){
+    display: none;
+}
+
+header nav ul:nth-child(3) li:nth-child(4) a{
+    text-transform: uppercase;
+    padding: 0px 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.567);
+    padding: 14px 20px;
+}
+
+@media screen and (max-width: 1360px){
+    header nav ul:nth-child(2),
+    header nav ul:nth-child(3) li:nth-child(1),
+    header nav ul:nth-child(3) li:nth-child(2){
+        display: none;
+    }
+    header nav ul:nth-child(3) li:nth-child(3){
+        display: block;
+    }
+    header nav ul:nth-child(3) li:nth-child(3) a{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-transform: uppercase;
+    }
+    header nav ul:nth-child(3) li:nth-child(3) a img{
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    header nav ul:nth-child(3) li:nth-child(3) a img{
+        transform: translateY(-1px);
+    }
+    header nav ul:nth-child(3) li:nth-child(4){
+        display: none;
+    }
+    
+}
+
